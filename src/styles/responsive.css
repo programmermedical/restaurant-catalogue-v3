@@ -1,0 +1,227 @@
+@media screen and (min-width: 650px) {
+  .app-bar {
+    grid-template-columns: 1fr auto;
+    padding: 8px 32px;
+  }
+ 
+  .app-bar .app-bar__brand h1 {
+    font-size: 1.5em;
+  }
+ 
+  .app-bar .app-bar__menu {
+    display: none;
+  }
+ 
+  .app-bar .app-bar__navigation {
+    position: static;
+    width: 100%;
+  }
+ 
+  .app-bar .app-bar__navigation ul li {
+    display: inline-block;
+  }
+ 
+  .app-bar .app-bar__navigation ul li a {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    margin: 0;
+  }
+ 
+  .restaurants {
+    grid-template-columns: 1fr 1fr;
+  }
+ 
+  .restaurant {
+    grid-template-columns: auto 1fr;
+  }
+ 
+  .restaurant .restaurant__title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+ 
+  .restaurant .restaurant__overview {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  footer #footerTools {
+    flex-direction: row;
+  }
+   
+}
+ 
+@media screen and (min-width: 800px) {
+  .app-bar .app-bar__brand h1 {
+    font-size: 2em;
+  }
+}
+ 
+@media screen and (min-width: 850px) {
+  .restaurants {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+ 
+@media screen and (min-width: 1200px) {
+  .restaurants {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+ 
+@media screen and (min-width: 1600px) {
+  .restaurants {
+      grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+   .text{
+    font-size: 30px;
+  }
+   form{
+    padding: 10px 0 0 0;
+  }
+
+  form h3{
+    margin-left: 0;
+   }
+
+   form .form-row{
+    display: block;
+  }
+  form .form-row .input-data{
+    margin: 35px 0!important;
+  }
+  .submit{
+    width: 100%!important;
+  }
+
+  form{
+    width: 100%;
+    margin: 0 ;
+  }
+}
+
+
+
+@media screen and (min-width: 100px) {
+  .hero-title {
+    font-size: 1.5em;
+    letter-spacing: 0;
+  }
+  
+  .hero-inner p{
+    font-size: 0.6em;
+  } 
+  .hero-inner .text{
+    display: none;
+  }
+  
+  .hero-inner a{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 12px;
+    margin: 10px 0 0;
+    background-color: #ffffff7c;
+    color: #fff;
+    font-size: 0.7em;
+    font-weight: 500;
+  }
+
+  .hero-inner a:hover{
+    transition: 0.2s;
+    font-size: 0.1em;
+    font-weight: 100;
+  }
+
+  footer p {
+    font-size: 7pt;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    min-height: 190px;
+    text-align: center;
+    background-image: url("../public/image/hero/hero-image-small.jpg");
+    background-position: center;
+    background-color: green;
+  }
+  
+  .restaurant-item__header__poster{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .hero-title {
+    font-size: 2em;
+  }
+  
+  .hero-inner p{
+    font-size: 0.7em;
+  }
+
+  .hero-inner .text{
+    display: inline-block;
+  }
+  
+  .hero-inner a{
+    display: none;
+  }
+
+  .hero {
+    background-image: url("../public/image/hero/hero-image-large.jpg");
+  }
+
+  .restaurant-item__header__poster{
+    width: max-content;
+  }
+
+}
+
+@media screen and (min-width: 800px) {
+  .hero-title {
+    font-size: 4em;
+  }
+
+  
+  footer p {
+    font-size: 9pt;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .hero {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 100%;
+  }
+
+  .hero-inner p{
+    font-size: 1em;
+  }
+
+  
+  footer p {
+    font-size: 11pt;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    min-height: 190px;
+    text-align: center;
+    background-image: url("../public/image/hero/hero-image.jpg");
+    background-position: center;
+    background-color: green;
+  }
+}
